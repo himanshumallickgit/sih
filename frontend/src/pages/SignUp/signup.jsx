@@ -20,8 +20,6 @@ const Signup = () => {
     
     const handleSubmit = async  (e) => {
         e.preventDefault();
-        // Transfer to login page after storing SignUp data in BACKEND 
-        // If any backend error occurs Return that error
         navigate("/login")
     }
 
@@ -29,12 +27,13 @@ const Signup = () => {
     <div className={styles.signup_container}>
         <div className={styles.signup_form_container}>
             <div className={styles.left}>
-                <h1>Welcome Back</h1>
+                <h1>Welcome Back!</h1>
                 <Link to="/login">
                     <button type='button' className={styles.white_btn}>
                         Sign In
                     </button>
                 </Link>
+
             </div>
             <div className={styles.right}>
                 <form className={styles.form_container} onSubmit={handleSubmit}>
